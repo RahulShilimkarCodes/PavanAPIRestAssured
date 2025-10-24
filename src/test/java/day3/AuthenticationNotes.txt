@@ -1,0 +1,45 @@
+Rest Assured
+-----------
+
+Authentications
+------
+
+1) Basic
+2) Basic- preemptive		//password will be encrypted
+3) Digest 					//password will be encrypted
+
+First 3 provide only username and password, basic type of login authentication..
+
+4) Bearer Token - Create the token for authentication
+
+5) API Key 			// passed as part of query parameters..
+6) OAuth 2.0  		//mostly used
+
+
+
+Oauth2.0
+--------------
+
+1) From the application (Manual process)
+	1) Client ID
+	2) Client Secrete
+
+2) Send Post request for getting token
+	POST https://api.imgur.com/oauth2/token
+		ClientID
+		Client secrete
+		tokenURL
+		Redirect URL
+		Grant type
+		Authorization code
+
+you will get token once POST request is succesfull.
+
+3) Use Token to do API call ( Get request).
+
+
+
+
+
+
+

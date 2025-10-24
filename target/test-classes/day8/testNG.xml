@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Serialization and De-Serialization">
+
+	<test name="Serialization and De-Serialization Tests">
+
+		<classes>
+
+			<class name="day8.Serialization" />
+			<class name="day8.DeSerialization" />
+
+		</classes>
+
+
+	</test>
+</suite>

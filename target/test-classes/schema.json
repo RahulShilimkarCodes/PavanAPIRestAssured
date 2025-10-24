@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "examples": [
+        "John"
+      ]
+    },
+    "lastName": {
+      "type": "string",
+      "examples": [
+        "Doe"
+      ]
+    },
+    "city": {
+      "type": "string",
+      "examples": [
+        "San Jose"
+      ]
+    },
+    "state": {
+      "type": "string",
+      "examples": [
+        "CA"
+      ]
+    }
+  },
+  "required": [
+    "firstName",
+    "lastName",
+    "city",
+    "state"
+  ]
+}

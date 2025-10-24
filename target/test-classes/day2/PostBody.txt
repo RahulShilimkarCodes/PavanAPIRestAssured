@@ -1,0 +1,18 @@
+Rest Assured
+---------------
+
+
+Post request
+-----
+
+Request payload/Body ( JSON format)
+Post URL
+Response
+
+Different ways to create post request body/ request payload.
+---------------
+1) HashMap
+2) org.json library
+3) Using java POJO class
+4) External json file
+

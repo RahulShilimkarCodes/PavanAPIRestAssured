@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Serialization and De-Serialization]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Serialization and De-Serialization Tests(failed)">
+    <classes>
+      <class name="day8.Serialization">
+        <methods>
+          <include name="SerializationTest"/>
+        </methods>
+      </class> <!-- day8.Serialization -->
+      <class name="day8.DeSerialization">
+        <methods>
+          <include name="DeSerializationTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- day8.DeSerialization -->
+    </classes>
+  </test> <!-- Serialization and De-Serialization Tests(failed) -->
+</suite> <!-- Failed suite [Serialization and De-Serialization] -->
