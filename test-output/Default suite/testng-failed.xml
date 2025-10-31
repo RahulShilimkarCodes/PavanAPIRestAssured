@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day4.FileUpload">
+      <class name="day2.PostRequestUsingExternalJSONFile">
         <methods>
-          <include name="downloadSingleFile"/>
+          <include name="deleteStudent"/>
+          <include name="createStudentUsingExternalJSONFile"/>
         </methods>
-      </class> <!-- day4.FileUpload -->
+      </class> <!-- day2.PostRequestUsingExternalJSONFile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

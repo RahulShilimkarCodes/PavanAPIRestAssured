@@ -14,10 +14,11 @@ import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.HashMap;
 
+import org.apache.commons.io.FileUtils;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 import org.testng.annotations.AfterMethod;
@@ -30,14 +31,14 @@ public class PostRequestUsingExternalJSONFile {
 	//1. Using HashMap..
 	
 	@Test
-	public void createStudentUsingExternalJSONFile() throws FileNotFoundException
+	public void createStudentUsingExternalJSONFile() throws IOException
 	{
 		File myFile = new File(".\\src\\test\\java\\day2\\Extrabody.json");
 		FileReader fileReader = new FileReader(myFile);
 		JSONTokener jsonTokener = new JSONTokener(fileReader); 	//Open the file using tokener....
-		
 		JSONObject requestDataJSON = new JSONObject(jsonTokener);
 		
+		//String requestDataJSON =  FileUtils.readFileToString(myFile, "UTF-8");		-- easy way
 		
 		studentID=given()
 			.contentType("application/json")
